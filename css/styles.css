@@ -1,0 +1,33 @@
+/* Navbar spacing and brand tweak */
+.custom-navbar {
+  background-color: #23486a;
+}
+
+.custom-navbar .navbar-brand {
+  color: #efb036 !important;
+}
+
+.custom-navbar .nav-link {
+  color: #eaefef !important;
+}
+
+/* Hero overlay image settings */
+.hero-img-wrapper {
+  position: relative;
+}
+
+.portrait-container {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.portrait-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: #eaefef 3px solid;
+  object-fit: cover;
+}
