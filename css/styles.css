@@ -1,5 +1,5 @@
 /* ---------------- Generic style ---------------- */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'");
 
 body {
   background-color: #f8f9fa;
@@ -13,18 +13,22 @@ body {
   height: 2px;
   background-color: #23486a;
   border: none;
-  margin: 0 auto;
 }
 
 /* Decorative quote */
 .big-quote {
-  font-size: 3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 6rem !important;
   color: #efb036;
+  line-height: 0.7;
+  margin: 0;
+  padding: 0;
 }
 
 /* highlight */
 .highlight-text {
-  color: #efb036;
+  color: #1f5f63;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -62,15 +66,23 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: #eaefef 3px solid;
+  border: #eaefef 2px solid;
   object-fit: cover;
 }
 
 /* About Section */
-.section-title {
-  font-weight: 500;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.about-title {
+  font-weight: 600;
   font-size: 1.5rem;
-  color: #23486a;
+  color: #1f5f63;
 }
 
 .about-text {
@@ -81,4 +93,35 @@ body {
 
 .about-text p {
   text-align: justify;
+}
+
+/* ---------------- Ouvrages Page ---------------- */
+/* Book Cover */
+.ouvrage-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px; /* overlap upward */
+  position: relative;
+  z-index: 1;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.book-img {
+  width: 180px;
+  border: #eaefef 2px solid;
+  object-fit: cover;
+}
+
+/* About Section */
+.book-section-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #23486a;
+  margin-top: 20px;
 }
