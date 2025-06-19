@@ -11,8 +11,9 @@ body {
 .section-divider {
   width: 30%;
   height: 2px;
-  background-color: #23486a;
+  background-color: #4c7b8b;
   border: none;
+  margin: 25px auto;
 }
 
 /* Decorative quote */
@@ -28,7 +29,7 @@ body {
 
 /* highlight */
 .highlight-text {
-  color: #1f5f63;
+  color: #efb036;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -82,7 +83,7 @@ body {
 .about-title {
   font-weight: 600;
   font-size: 1.5rem;
-  color: #1f5f63;
+  color: #23486a;
 }
 
 .about-text {
@@ -109,7 +110,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px auto;
 }
 
 .book-img {
@@ -118,10 +118,47 @@ body {
   object-fit: cover;
 }
 
-/* About Section */
-.book-section-title {
+.book-summary {
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+
+.book-summary h2 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #23486a;
-  margin-top: 20px;
+  margin: 15px auto;
+}
+
+.book-summary p {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-amazon {
+  width: 140px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #23486a;
+  border: #23486a 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn-more {
+  width: 140px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #23486a;
+  border: #23486a 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
 }
