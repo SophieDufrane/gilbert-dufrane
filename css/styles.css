@@ -15,13 +15,11 @@ body {
 
 /* Let main content grow to fill space */
 main {
-  flex: 1;
-  min-height: 1px;
+  flex-grow: 1;
 }
 
-/* Flex container for the whole page */
 .page-wrapper {
-  min-height: 100vh; /* full screen height */
+  min-height: 100vh; /* force full screen height */
   display: flex;
   flex-direction: column;
 }
@@ -76,8 +74,8 @@ main {
 
 /* ---------------- Footer ---------------- */
 .custom-footer {
-  background-color: #333446;
-  padding: 20px 0;
+  padding: 10px 0;
+  border-top: #ec4e45 1px solid;
 }
 
 .footer-top {
@@ -89,17 +87,20 @@ main {
 
 .footer-main-text,
 .footer-credit {
-  color: #eaefef !important;
+  color: #333446 !important;
   margin: 0;
 }
 
+.footer-main-text {
+  font-size: 0.8rem;
+}
+
 .footer-credit {
-  font-size: 0.7rem;
-  margin-top: 5px;
+  font-size: 0.6rem;
 }
 
 .footer-icon {
-  color: #eaefef;
+  color: #333446;
   text-decoration: none;
 }
 
@@ -134,7 +135,6 @@ main {
 }
 
 .landing-img {
-  height: 400px;
   width: 100%;
   object-fit: cover;
   display: block;
