@@ -24,13 +24,25 @@ body {
 
 .btn {
   width: 200px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #183b4e;
-  border: #183b4e 3px solid;
+  border: #183b4e 2.5px solid;
   border-radius: 20px;
   padding: 10px;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #183b4e;
+  color: #eaefef;
+  border: #183b4e 2.5px solid;
+}
+
+.highlight-text {
+  font-size: 1.3rem;
+  color: #ec4e45;
 }
 
 /* ---------------- Navbar ---------------- */
@@ -55,8 +67,8 @@ body {
   font-size: 10rem;
   color: #ec4e45;
   position: absolute;
-  top: 50px;
-  left: 10px; /* Move it to the left */
+  top: 25px;
+  left: 10px;
   line-height: 0.7;
   margin: 0;
   padding: 0;
@@ -65,20 +77,18 @@ body {
 
 /* ---------------- Landing Page ---------------- */
 .landing-img-wrapper {
-  position: relative;
   width: 100%;
   height: auto;
 }
 
 .landing-img {
-  width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
 }
 
 .landing-title {
   position: absolute;
-  top: 28%; /* Vertical centre */
+  top: 40%; /* Vertical centre */
   left: 10%;
   transform: translateY(-50%);
   font-size: 3.5rem;
@@ -87,18 +97,15 @@ body {
 }
 
 .landing-btn {
-  position: absolute;
-  top: 60%; /* Vertical centre */
-  left: 25%;
-  z-index: 2;
+  display: block;
+  margin: 2rem auto 0 auto;
 }
 
 /* ---------------- About Page ---------------- */
-/* Portrait */
 .portrait-container {
   display: flex;
   justify-content: center;
-  margin-top: -30px; /* overlap upward */
+  margin-top: -30px;
   position: relative;
   z-index: 1;
 }
@@ -110,7 +117,6 @@ body {
   object-fit: cover;
 }
 
-/* About Section */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -134,18 +140,11 @@ body {
   text-align: justify;
 }
 
-/* highlight */
-.highlight-text {
-  font-size: 1.3rem;
-  color: #ec4e45;
-}
-
 /* ---------------- Ouvrages Page ---------------- */
-/* Book Cover */
 .ouvrage-container {
   display: flex;
   justify-content: center;
-  margin-top: -20px; /* overlap upward */
+  margin-top: -20px;
   position: relative;
   z-index: 1;
 }
@@ -174,21 +173,4 @@ body {
 .book-summary p {
   font-size: 0.8rem;
   text-align: justify;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.btn-amazon {
-  width: 140px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #27548a;
-  border: #27548a 2px solid;
-  border-radius: 5px;
-  padding: 10px;
-  text-decoration: none;
 }
