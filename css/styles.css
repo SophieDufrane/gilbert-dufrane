@@ -55,6 +55,39 @@ body {
   color: #eaefef !important;
 }
 
+/* ---------------- Footer ---------------- */
+.custom-footer {
+  background-color: #333446;
+  padding: 20px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* spacing between text and icon */
+}
+
+.footer-main-text,
+.footer-credit {
+  color: #eaefef !important;
+  margin: 0;
+}
+
+.footer-credit {
+  font-size: 0.7rem;
+  margin-top: 5px;
+}
+
+.footer-icon {
+  color: #eaefef;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #ec4e45;
+}
+
 /* ---------------- Hero ---------------- */
 .hero-wrapper {
   background-color: #7f8caa;
