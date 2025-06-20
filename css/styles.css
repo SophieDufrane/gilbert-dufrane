@@ -7,6 +7,25 @@ body {
   color: #183b4e;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Let main content grow to fill space */
+main {
+  flex: 1;
+  min-height: 1px;
+}
+
+/* Flex container for the whole page */
+.page-wrapper {
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -111,11 +130,13 @@ body {
 /* ---------------- Landing Page ---------------- */
 .landing-img-wrapper {
   width: 100%;
-  height: auto;
+  position: relative;
 }
 
 .landing-img {
   height: 400px;
+  width: 100%;
+  object-fit: cover;
   display: block;
 }
 
