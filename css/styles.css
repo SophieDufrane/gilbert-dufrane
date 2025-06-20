@@ -1,56 +1,96 @@
 /* ---------------- Generic style ---------------- */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
 body {
-  background-color: #f8f9fa;
+  background-color: #eaefef;
   font-family: "Raleway", sans-serif;
-  color: #333;
+  color: #183b4e;
 }
 
-/* Decorative line */
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7f8caa;
+}
+
 .section-divider {
   width: 30%;
   height: 2px;
-  background-color: #4c7b8b;
+  background-color: #7f8caa;
   border: none;
   margin: 25px auto;
 }
 
-/* Decorative quote */
-.big-quote {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
-  font-size: 6rem !important;
-  color: #efb036;
-  line-height: 0.7;
-  margin: 0;
-  padding: 0;
-}
-
-/* highlight */
-.highlight-text {
-  color: #efb036;
-  font-size: 1rem;
+.btn {
+  width: 200px;
+  font-size: 0.8rem;
   font-weight: 600;
+  color: #183b4e;
+  border: #183b4e 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
 }
 
 /* ---------------- Navbar ---------------- */
 .custom-navbar {
-  background-color: #23486a;
+  background-color: #333446;
 }
 
-.custom-navbar .navbar-brand {
-  color: #efb036 !important;
-}
-
+.custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
   color: #eaefef !important;
 }
 
 /* ---------------- Hero ---------------- */
 .hero-wrapper {
-  background-color: #3b6790;
-  height: 90px;
+  background-color: #7f8caa;
+  height: 65px;
+}
+
+.hero-quote {
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  font-size: 10rem;
+  color: #ec4e45;
+  position: absolute;
+  top: 50px;
+  left: 10px; /* Move it to the left */
+  line-height: 0.7;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/* ---------------- Landing Page ---------------- */
+.landing-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.landing-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.landing-title {
+  position: absolute;
+  top: 28%; /* Vertical centre */
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  z-index: 2;
+  color: #eaefef;
+}
+
+.landing-btn {
+  position: absolute;
+  top: 60%; /* Vertical centre */
+  left: 25%;
+  z-index: 2;
 }
 
 /* ---------------- About Page ---------------- */
@@ -58,7 +98,7 @@ body {
 .portrait-container {
   display: flex;
   justify-content: center;
-  margin-top: -50px; /* overlap upward */
+  margin-top: -30px; /* overlap upward */
   position: relative;
   z-index: 1;
 }
@@ -66,8 +106,7 @@ body {
 .portrait-img {
   width: 180px;
   height: 180px;
-  border-radius: 50%;
-  border: #eaefef 2px solid;
+  border-radius: 5%;
   object-fit: cover;
 }
 
@@ -80,10 +119,9 @@ body {
   padding: 10px;
 }
 
-.about-title {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #23486a;
+.about-container h2 {
+  font-size: 2.5rem;
+  text-align: left;
 }
 
 .about-text {
@@ -96,12 +134,18 @@ body {
   text-align: justify;
 }
 
+/* highlight */
+.highlight-text {
+  font-size: 1.3rem;
+  color: #ec4e45;
+}
+
 /* ---------------- Ouvrages Page ---------------- */
 /* Book Cover */
 .ouvrage-container {
   display: flex;
   justify-content: center;
-  margin-top: -50px; /* overlap upward */
+  margin-top: -20px; /* overlap upward */
   position: relative;
   z-index: 1;
 }
@@ -114,7 +158,6 @@ body {
 
 .book-img {
   width: 180px;
-  border: #eaefef 2px solid;
   object-fit: cover;
 }
 
@@ -124,9 +167,7 @@ body {
 }
 
 .book-summary h2 {
-  font-weight: 500;
   font-size: 1.3rem;
-  color: #23486a;
   margin: 15px auto;
 }
 
@@ -145,19 +186,8 @@ body {
   width: 140px;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #23486a;
-  border: #23486a 2px solid;
-  border-radius: 5px;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.btn-more {
-  width: 140px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #23486a;
-  border: #23486a 2px solid;
+  color: #27548a;
+  border: #27548a 2px solid;
   border-radius: 5px;
   padding: 10px;
   text-decoration: none;
